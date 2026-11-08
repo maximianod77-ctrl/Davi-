@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaBank | Banco Digital Premium</title>
+    <meta
+      name="description"
+      content="Banco digital premium com dashboard financeiro, cartões, Pix, investimentos e painel administrativo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">N</div>
+          <div>
+            <span class="brand-tag">NovaBank</span>
+            <small>Private Banking</small>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Navegação principal">
+          <button class="menu-item active" data-view="overview">
+            <span class="icon">⌂</span>
+            <span>Início</span>
+          </button>
+          <button class="menu-item" data-view="cards">
+            <span class="icon">◫</span>
+            <span>Cartões</span>
+          </button>
+          <button class="menu-item" data-view="pix">
+            <span class="icon">✦</span>
+            <span>Pix</span>
+          </button>
+          <button class="menu-item" data-view="extract">
+            <span class="icon">▣</span>
+            <span>Extrato</span>
+          </button>
+          <button class="menu-item" data-view="investments">
+            <span class="icon">◌</span>
+            <span>Investimentos</span>
+          </button>
+          <button class="menu-item" data-view="credit">
+            <span class="icon">◎</span>
+            <span>Crédito</span>
+          </button>
+          <button class="menu-item" data-view="benefits">
+            <span class="icon">✧</span>
+            <span>Benefícios</span>
+          </button>
+          <button class="menu-item" data-view="admin">
+            <span class="icon">▤</span>
+            <span>Admin</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-card">
+          <div class="mini-label">Score</div>
+          <div class="score-box">
+            <strong>912</strong>
+            <span>Excelente</span>
+          </div>
+          <button class="ghost-btn">Ver detalhes</button>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="header-copy">
+            <span class="eyebrow">Bom dia</span>
+            <h1>Olá, Davi</h1>
+          </div>
+
+          <div class="header-actions">
+            <button class="icon-btn" aria-label="Pesquisar">⌕</button>
+            <button class="icon-btn notify" aria-label="Notificações">
+              <span>🔔</span>
+              <em>3</em>
+            </button>
+            <div class="user-pill">
+              <div class="avatar">D</div>
+              <div>
+                <strong>Davi</strong>
+                <small>Premium</small>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="view active" id="overview">
+          <div class="hero-grid">
+            <article class="balance-card glass-panel spotlight">
+              <div class="balance-top">
+                <div>
+                  <span class="label text-subtle">Saldo disponível</span>
+                  <div class="money-row">
+                    <h2 class="amount" data-secret="R$ 27.480,92">R$ 27.480,92</h2>
+                    <button class="eye-btn" aria-label="Ocultar saldo">◉</button>
+                  </div>
+                </div>
+                <span class="chip success">+ 8,2% este mês</span>
+              </div>
+
+              <div class="stats-row">
+                <div>
+                  <span class="label text-subtle">Entradas</span>
+                  <strong class="positive">R$ 14.820,50</strong>
+                </div>
+                <div>
+                  <span class="label text-subtle">Saídas</span>
+                  <strong class="negative">R$ 8.490,15</strong>
+                </div>
+                <div>
+                  <span class="label text-subtle">Crédito</span>
+                  <strong>R$ 18.000,00</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-preview glass-panel">
+              <div class="card-head">
+                <span>Cartão principal</span>
+                <span class="badge">Black</span>
+              </div>
+
+              <div class="bank-card">
+                <div class="card-toprow">
+                  <span>NovaBank</span>
+                  <span>VISA</span>
+                </div>
+                <div class="card-number">•••• 4074</div>
+                <div class="card-footer">
+                  <div>
+                    <small>Nome</small>
+                    <strong>Davi Costa</strong>
+                  </div>
+                  <div>
+                    <small>Válida</small>
+                    <strong>05/29</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="quick-actions">
+            <button class="action-btn"><span>↗</span> Pix</button>
+            <button class="action-btn"><span>⇄</span> Transferir</button>
+            <button class="action-btn"><span>↓</span> Depositar</button>
+            <button class="action-btn"><span>◌</span> Pagar</button>
+            <button class="action-btn"><span>◎</span> Cobrar</button>
+            <button class="action-btn"><span>✦</span> Investir</button>
+          </div>
+
+          <div class="content-grid">
+            <article class="panel glass-panel">
+              <div class="panel-header">
+                <div>
+                  <span class="eyebrow muted">Movimentações</span>
+                  <h3>Últimas transações</h3>
+                </div>
+                <button class="text-btn">Ver tudo</button>
+              </div>
+
+              <div class="transaction-list">
+                <div class="transaction-item">
+                  <div class="tx-icon green">↑</div>
+                  <div class="tx-meta">
+                    <strong>Salário</strong>
+                    <small>Hoje · 09:42</small>
+                  </div>
+                  <span class="amount positive">+ R$ 6.800,00</span>
+                </div>
+                <div class="transaction-item">
+                  <div class="tx-icon red">↓</div>
+                  <div class="tx-meta">
+                    <strong>Supermercado</strong>
+                    <small>Ontem · 18:16</small>
+                  </div>
+                  <span class="amount negative">- R$ 436,90</span>
+                </div>
+                <div class="transaction-item">
+                  <div class="tx-icon purple">✦</div>
+                  <div class="tx-meta">
+                    <strong>Pix - Marina</strong>
+                    <small>Ontem · 12:20</small>
+                  </div>
+                  <span class="amount negative">- R$ 280,00</span>
+                </div>
+                <div class="transaction-item">
+                  <div class="tx-icon green">↗</div>
+                  <div class="tx-meta">
+                    <strong>Rendimentos</strong>
+                    <small>Seg · 07:12</small>
+                  </div>
+                  <span class="amount positive">+ R$ 126,40</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel glass-panel chart-panel">
+              <div class="panel-header">
+                <div>
+                  <span class="eyebrow muted">Desempenho</span>
+                  <h3>Resumo financeiro</h3>
+                </div>
+                <div class="segmented">
+                  <button class="segment active">7D</button>
+                  <button class="segment">30D</button>
+                  <button class="segment">90D</button>
+                </div>
+              </div>
+
+              <div class="chart-bars" aria-label="Gráfico de gastos">
+                <span style="--h: 20%"></span>
+                <span style="--h: 35%"></span>
+                <span style="--h: 55%"></span>
+                <span style="--h: 40%"></span>
+                <span style="--h: 80%"></span>
+                <span style="--h: 68%"></span>
+                <span style="--h: 90%"></span>
+              </div>
+            </article>
+          </div>
+
+          <div class="bottom-grid">
+            <article class="panel glass-panel small-panel">
+              <div class="panel-header compact">
+                <h3>Investimentos</h3>
+                <span class="muted">+ 12,4%</span>
+              </div>
+              <div class="big-number">R$ 128.400,00</div>
+              <div class="bar-track"><span style="width: 74%"></span></div>
+              <small class="muted">Carteira diversificada em renda fixa e variável</small>
+            </article>
+
+            <article class="panel glass-panel small-panel">
+              <div class="panel-header compact">
+                <h3>Benefícios</h3>
+                <span class="muted">2 ofertas</span>
+              </div>
+              <ul class="benefit-list">
+                <li>Cashback em supermercado <strong>+R$ 180</strong></li>
+                <li>Desconto em assinatura premium</li>
+                <li>Oferta de crédito com taxa preferencial</li>
+              </ul>
+            </article>
+
+            <article class="panel glass-panel small-panel">
+              <div class="panel-header compact">
+                <h3>Saúde financeira</h3>
+                <span class="chip success">Bom</span>
+              </div>
+              <div class="score-visual">
+                <div class="score-ring">
+                  <span>82%</span>
+                </div>
+                <div>
+                  <strong>Estabilidade alta</strong>
+                  <small class="muted">Sem alertas críticos</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="cards">
+          <div class="page-header">
+            <div>
+              <span class="eyebrow muted">Cartões</span>
+              <h2>Controle financeiro premium</h2>
+            </div>
+            <button class="primary-btn">Solicitar cartão</button>
+          </div>
+
+          <div class="two-column-layout">
+            <article class="panel glass-panel flip-panel">
+              <div class="card-stage">
+                <div class="bank-card card-large is-flipped">
+                  <div class="card-toprow">
+                    <span>NovaBank</span>
+                    <span>VISA</span>
+                  </div>
+                  <div class="card-number">•••• 4074</div>
+                  <div class="card-footer">
+                    <div>
+                      <small>Nome</small>
+                      <strong>Davi Costa</strong>
+                    </div>
+                    <div>
+                      <small>Valida</small>
+                      <strong>05/29</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="ghost-btn">Bloquear</button>
+                <button class="ghost-btn">Criar virtual</button>
+                <button class="primary-btn">Pagar fatura</button>
+              </div>
+            </article>
+
+            <article class="panel glass-panel">
+              <div class="panel-header compact">
+                <h3>Resumo do cartão</h3>
+                <span class="chip info">Fatura em 4 dias</span>
+              </div>
+              <div class="stat-stack">
+                <div class="stat-box">
+                  <span>Limite</span>
+                  <strong>R$ 18.000,00</strong>
+                </div>
+                <div class="stat-box">
+                  <span>Utilizado</span>
+                  <strong>R$ 7.340,85</strong>
+                </div>
+                <div class="stat-box">
+                  <span>Disponível</span>
+                  <strong>R$ 10.659,15</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="pix">
+          <div class="page-header">
+            <div>
+              <span class="eyebrow muted">Pix</span>
+              <h2>Transferências rápidas</h2>
+            </div>
+            <button class="primary-btn">Nova transferência</button>
+          </div>
+
+          <div class="pix-grid">
+            <article class="panel glass-panel">
+              <div class="panel-header compact">
+                <h3>Atalhos</h3>
+              </div>
+              <div class="quick-pix">
+                <button>CPF</button>
+                <button>Telefone</button>
+                <button>Email</button>
+                <button>QR Code</button>
+                <button>Favoritos</button>
+                <button>Histórico</button>
+              </div>
+            </article>
+
+            <article class="panel glass-panel padding-xl">
+              <div class="pix-qr-block">
+                <div class="qr-box">QR</div>
+                <div>
+                  <small class="muted">Chave Pix</small>
+                  <strong>davi@novabank.com.br</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="extract">
+          <div class="page-header">
+            <div>
+              <span class="eyebrow muted">Extrato</span>
+              <h2>Histórico detalhado</h2>
+            </div>
+          </div>
+
+          <article class="panel glass-panel">
+            <div class="extract-table">
+              <div class="extract-row header-row">
+                <span>Descrição</span>
+                <span>Categoria</span>
+                <span>Data</span>
+                <span>Status</span>
+                <span>Valor</span>
+              </div>
+              <div class="extract-row">
+                <span>Salário</span>
+                <span>Receita</span>
+                <span>07 nov</span>
+                <span class="status success">Confirmado</span>
+                <span class="amount positive">+ R$ 6.800,00</span>
+              </div>
+              <div class="extract-row">
+                <span>Supermercado</span>
+                <span>Alimentação</span>
+                <span>06 nov</span>
+                <span class="status neutral">Processando</span>
+                <span class="amount negative">- R$ 436,90</span>
+              </div>
+              <div class="extract-row">
+                <span>Transferência para Marina</span>
+                <span>Pix</span>
+                <span>05 nov</span>
+                <span class="status success">Concluído</span>
+                <span class="amount negative">- R$ 280,00</span>
+              </div>
+              <div class="extract-row">
+                <span>Rendimento aplicações</span>
+                <span>Investimento</span>
+                <span>04 nov</span>
+                <span class="status success">Confirmado</span>
+                <span class="amount positive">+ R$ 126,40</span>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="investments">
+          <div class="page-header">
+            <div>
+              <span class="eyebrow muted">Investimentos</span>
+              <h2>Carteira em crescimento</h2>
+            </div>
+            <button class="primary-btn">Nova aplicação</button>
+          </div>
+
+          <div class="stats-row triple">
+            <div class="stat-box">
+              <span>Patrimônio</span>
+              <strong>R$ 128.400,00</strong>
+            </div>
+            <div class="stat-box">
+              <span>Renda fixa</span>
+              <strong>R$ 78.200,00</strong>
+            </div>
+            <div class="stat-box">
+              <span>Renda variável</span>
+              <strong>R$ 50.200,00</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="credit">
+          <div class="page-header">
+            <div>
+              <span class="eyebrow muted">Crédito</span>
+              <h2>Limite e condições</h2>
+            </div>
+          </div>
+
+          <article class="panel glass-panel credit-box">
+            <div class="credit-head">
+              <div>
+                <small class="muted">Limite pré-aprovado</small>
+                <h3>R$ 35.000,00</h3>
+              </div>
+              <span class="chip success">Taxa a partir de 1,49% a.m.</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="benefits">
+          <div class="page-header">
+            <div>
+              <span class="eyebrow muted">Benefícios</span>
+              <h2>Vantagens e cashback</h2>
+            </div>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="panel glass-panel benefit-item">
+              <h3>Cashback</h3>
+              <strong>R$ 1.280,00</strong>
+              <small class="muted">Acumulado este ano</small>
+            </article>
+            <article class="panel glass-panel benefit-item">
+              <h3>Descontos</h3>
+              <strong>18 parceiros</strong>
+              <small class="muted">Exclusivos para premium</small>
+            </article>
+            <article class="panel glass-panel benefit-item">
+              <h3>Pontos</h3>
+              <strong>34.200 pts</strong>
+              <small class="muted">Atualizados hoje</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="admin">
+          <div class="page-header">
+            <div>
+              <span class="eyebrow muted">Painel administrativo</span>
+              <h2>Operações e riscos</h2>
+            </div>
+          </div>
+
+          <div class="admin-grid">
+            <article class="panel glass-panel">
+              <h3>Indicadores</h3>
+              <ul class="simple-list">
+                <li>Clientes ativos: 24.840</li>
+                <li>Volume mensal: R$ 48,2M</li>
+                <li>Transações Pix: 8.410</li>
+                <li>Alertas antifraude: 12</li>
+              </ul>
+            </article>
+            <article class="panel glass-panel">
+              <h3>Compliance</h3>
+              <ul class="simple-list">
+                <li>KYC em dia: 98,4%</li>
+                <li>AML revisões: 21</li>
+                <li>Fraud score médio: 17</li>
+                <li>Auditoria: OK</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
